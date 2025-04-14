@@ -2,13 +2,11 @@
 
 A lightweight machine learning project that predicts the outcome of the 2025 Japanese Grand Prix using real Formula 1 data from the FastF1 API.
 
----
 
 ## 📌 Overview
 
 This project combines historical race data and current season qualifying data to predict race performance. It uses a machine learning model to estimate lap times and determine the most likely finishing order.
 
----
 
 ## 🔧 What It Does
 
@@ -17,7 +15,6 @@ This project combines historical race data and current season qualifying data to
 - Trains a Gradient Boosting Regressor to predict race lap pace  
 - Outputs a sorted prediction of race results and the winner  
 
----
 
 ## ✅ Results
 
@@ -26,7 +23,6 @@ This project combines historical race data and current season qualifying data to
 - 📉 Mean Absolute Error (MAE): 0.156 seconds  
 - 📊 Several other top positions closely aligned with actual results  
 
----
 
 ## 🚀 Getting Started
 
@@ -71,7 +67,6 @@ fastf1.Cache.enable_cache('cache')
 python prediction_japan_2025.py
 ```
 
----
 
 ## 📁 Project Structure
 
@@ -81,7 +76,6 @@ python prediction_japan_2025.py
 | quali_data_japan.py      | 2025 qualifying data (manually entered) |
 | requirements.txt         | Python package dependencies           |
 
----
 
 ## 🧠 Built With
 
@@ -91,7 +85,6 @@ python prediction_japan_2025.py
 - NumPy  
 - scikit-learn  
 
----
 
 ## 📈 Highlights
 
@@ -100,15 +93,12 @@ python prediction_japan_2025.py
 - 📉 MAE of just 0.156s, showing strong model reliability  
 - 🏁 Predictions align closely with actual top finishers  
 
----
 
 ## 🔮 Future Enhancements
 
 - Include FP1, FP2, FP3 practice session data  
 - Expand to full 2025 season race predictions  
-- Add a Streamlit UI for interactive prediction visualization  
-
----
+- Add a Streamlit UI for interactive prediction visualization
 
 
 ## 📜 License
