@@ -1,16 +1,11 @@
 import pandas as pd
 
 def parse_time_to_seconds(time_str):
-    """
-    Converts a time string in the format 'HH:MM:SS.sss...' into total seconds.
-    Example: '00:01:26.9830000' -> total seconds.
-    Assumes the hour part is "00".
-    """
+
     try:
         parts = time_str.split(':')
         if len(parts) != 3:
             return None
-        # We assume hours is "00", so we use minutes and seconds.
         minutes = float(parts[1])
         seconds = float(parts[2])
         return minutes * 60 + seconds
@@ -19,18 +14,7 @@ def parse_time_to_seconds(time_str):
         return None
 
 def load_2025_qualifying_data_japan():
-    """
-    Returns a DataFrame with the 2025 Japanese GP Qualifying (Starting Grid) data.
-    
-    Columns:
-      - Pos: Official grid position.
-      - No: Car number.
-      - Driver: Full driver name.
-      - Car: Team and car details.
-      - Time: Qualifying lap time as a string.
-      - Laps: Number of laps completed.
-      - Time_sec: Qualifying lap time converted to seconds.
-    """
+
     data = [
         {"Pos": 1,  "No": 1,  "Driver": "Max Verstappen",    "Car": "Red Bull Racing Honda RBPT",          "Time": "00:01:26.9830000", "Laps": 17},
         {"Pos": 2,  "No": 4,  "Driver": "Lando Norris",      "Car": "McLaren Mercedes",                     "Time": "00:01:26.9950000", "Laps": 15},
