@@ -57,7 +57,7 @@ def main():
     merged['PredictedPosition'] = range(1, len(merged) + 1)
     merged['PredictedPosition'] = merged['PredictedPosition'].apply(lambda x: f'P{x}')
     
-    print("\nPredicted Race Results for 2025 Japanese GP (following YouTube demo approach):")
+    print("\nPredicted Race Results for 2025 Japanese GP:")
     print(merged[['PredictedPosition', 'Driver_quali', 'Time_sec', 'AvgLapTime2024', 'PredictedRaceLapTime']])
     
     predicted_winner = merged.iloc[0]['Driver_quali']
